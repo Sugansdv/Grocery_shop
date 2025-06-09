@@ -1,0 +1,134 @@
+.address-container {
+  max-width: 650px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  box-sizing: border-box;
+}
+
+.address-container h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.address-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-input {
+  padding: 10px;
+  margin-bottom: 12px;
+  border: 1px solid #333;
+  border-radius: 4px;
+  font-size: 16px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.city-state {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.city-state .form-input {
+  flex: 1 1 48%;
+  min-width: 48%;
+}
+
+.add-btn {
+  background-color: #4caf50;
+  color: white;
+  font-weight: bold;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.add-btn:hover {
+  background-color: #45a049;
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+  margin-top: -8px;
+  margin-bottom: 10px;
+}
+
+.step-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0 10px;
+}
+
+.steps {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  font-size: 28px;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.step-nav .step.active,
+.step-nav .step:visited {
+  color: green;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.step-nav .step {
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .step-nav {
+    margin-top: 100px !important;
+  }
+
+  .city-state {
+    flex-direction: column;
+  }
+
+  .city-state .form-input {
+    min-width: 100%;
+  }
+
+  .steps {
+    font-size: 22px;
+  }
+
+  .add-btn {
+    font-size: 15px;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .steps {
+    font-size: 18px;
+    gap: 4px;
+  }
+
+  .form-input {
+    font-size: 15px;
+    padding: 8px;
+  }
+
+  .add-btn {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .address-container {
+    padding: 15px;
+  }
+}

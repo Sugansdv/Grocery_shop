@@ -27,6 +27,7 @@ import Register from './components/Register';
 import Login from './components/Login';
 import Address from './components/Address';
 import Payment from './components/Payment';
+import ScrollToTop from './components/ScrollToTop';
 import Readmore from './components/Readmore'
 import './index.css';
 
@@ -35,6 +36,7 @@ function App() {
     <CartProvider>
       <Router>
         <Header />
+        <ScrollToTop />
         <div className="container mt-5 pt-5">
           <Routes>
             <Route path="/" element={<HomePage />} />

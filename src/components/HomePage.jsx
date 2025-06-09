@@ -299,7 +299,7 @@ const HomePage = () => {
                       </span>
                       <div className="product-rating text-warning">
                         {[...Array(product.rating)].map((_, i) => (
-                          <i key={i} className="bi bi-star-fill"></i>
+                          <i className="bi bi-star-fill fs-lg-5 px-lg-2" key={i} style={{ color: '#C5E6A1' }}></i>
                         ))}
                       </div>
                     </div>
@@ -437,7 +437,7 @@ const HomePage = () => {
                     <div className="card-body">
                       <h5 className="card-title">{product.name}</h5>
                       <h4>₹ {product.price}</h4>
-                      <div className="text-warning mb-3">
+                      <div className="text-warning mb-3" style={{ color: '#C5E6A1' }}>
                         {"★".repeat(product.rating)}
                         {"☆".repeat(5 - product.rating)}
                       </div>

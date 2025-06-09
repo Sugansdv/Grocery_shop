@@ -4,14 +4,14 @@ import { CartContext } from './CartContext';
 import Header from './Header';
 import '../assets/css/CatProduct.css'; 
 
-import Snack1 from '../assets/snack cate 1.png';
-import Snack2 from '../assets/snack cate 2.png';
-import Snack3 from '../assets/snack cate 3.png';
-import Snack4 from '../assets/snack cate 4.png';
-import Snack5 from '../assets/snack cate 5.png';
-import Snack6 from '../assets/snack cate 6.png';
-import Snack7 from '../assets/snack cate 7.png';
-import Snack8 from '../assets/snack cate 8.png';
+import Snack1 from '../assets/Snack cate 1.png';
+import Snack2 from '../assets/Snack cate 2.png';
+import Snack3 from '../assets/Snack cate 3.png';
+import Snack4 from '../assets/Snack cate 4.png';
+import Snack5 from '../assets/Snack cate 5.png';
+import Snack6 from '../assets/Snack cate 6.png';
+import Snack7 from '../assets/Snack cate 7.png';
+import Snack8 from '../assets/Snack cate 8.png';
 
 const allProducts = [
   {

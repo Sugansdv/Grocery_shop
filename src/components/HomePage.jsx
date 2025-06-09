@@ -1,6 +1,7 @@
 import React, { useContext, useState, useEffect  } from "react";
 import Header from "./Header";
 import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import '../assets/css/HomePage.css';
 import { CartContext } from "./CartContext";
 import { Card, Row, Col, Button } from "react-bootstrap";
@@ -45,6 +46,7 @@ import user7 from '../assets/image on map 7.png';
 import reviewUser from '../assets/image on map 8.png';
 
 const HomePage = () => {
+   const navigate = useNavigate();
     useEffect(() => {
     document.title = "Groceries Home";
   }, []);
@@ -59,6 +61,7 @@ const HomePage = () => {
       image: organicTomatoes,
       category: "Vegetable",
       weight: "250g",
+      path: "/product/vegetable/6",
     },
     {
       id: 12,
@@ -68,6 +71,8 @@ const HomePage = () => {
       image: freshMeat,
       category: "Meat",
       weight: "500g",
+       path: "product/meatseafood/8",
+       
     },
     {
       id: 13,
@@ -77,6 +82,7 @@ const HomePage = () => {
       image: seasonalMangoes,
       category: "Fruit",
       weight: "1kg",
+       path: "product/fruits/1",
     },
     {
       id: 14,
@@ -86,16 +92,17 @@ const HomePage = () => {
       image: greenOnions,
       category: "Vegetable",
       weight: "250g",
+      path: "product/vegetable/1",
     },
   ];
 
   const categories = [
     { name: "Vegetable", items: 20, icon: vegetableIcon, path: "/vegetable" },
-    { name: "Fresh Fruits", items: 12, icon: fruitIcon, path: "/fresh-fruits" },
-    { name: "Meat", items: 7, icon: meatIcon, path: "/meat" },
-    { name: "Sea Food", items: 12, icon: seafoodIcon, path: "/seafood" },
-    { name: "Milk & diary", items: 8, icon: milkIcon, path: "/milk-diary" },
-    { name: "Fresh Bread", items: 24, icon: breadIcon, path: "/fresh-bread" },
+    { name: "Fresh Fruits", items: 12, icon: fruitIcon, path: "/fruits" },
+    { name: "Meat", items: 7, icon: meatIcon, path: "/meat-seafood" },
+    { name: "Sea Food", items: 12, icon: seafoodIcon, path: "/meat-seafood" },
+    { name: "Milk & diary", items: 8, icon: milkIcon, path: "/dairy-eggs" },
+    { name: "Fresh Bread", items: 24, icon: breadIcon, path: "/bakery" },
   ];
 
   const data = {
@@ -117,10 +124,10 @@ const HomePage = () => {
   };
 
   const products_bestdeals = [
-    { id: 31, image: redChilies, name: "Red Chilies", price: 80, rating: 5 },
-    { id: 32, image: eggs, name: "Fresh Eggs", price: 120, rating: 4 },
-    { id: 33, image: soya, name: "Soya Chunks", price: 70, rating: 5 },
-    { id: 34, image: beans, name: "Dry Beans", price: 135, rating: 5 },
+    { id: 31, image: redChilies, name: "Red Chilies", price: 80, rating: 5,path: "product/vegetable/1"},
+    { id: 32, image: eggs, name: "Fresh Eggs", price: 120, rating: 4,path: "product/dairyeggs/3" },
+    { id: 33, image: soya, name: "Soya Chunks", price: 70, rating: 5,path: "product/pantrystaples/4" },
+    { id: 34, image: beans, name: "Dry Beans", price: 135, rating: 5,path: "product/pantrystaples/1" },
   ];
 
   const handleAddToCart = (product) => {
@@ -130,6 +137,9 @@ const HomePage = () => {
     };
     addToCart(productToAdd);
     console.log("Added to cart:", productToAdd);
+    if (product.path) {
+      navigate(product.path);
+    }
   };
 
   return (

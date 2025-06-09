@@ -33,7 +33,6 @@ const Category = () => {
         <title>Groceries Category</title>
       </Helmet>
 
-      {/* Inline CSS inside the component */}
       <style>
         {`
           .category-img {

@@ -15,15 +15,16 @@ import fruits7 from '../assets/fruits cate 7.png';
 import fruits8 from '../assets/fruits cate 8.png';
 
 const productsData = [
-  { id: 1, name: 'Strawberry',category:"Fruits", price: 80, rating: 4.5, image: fruits1 },
-       { id: 2, name: 'Apple', category:"Fruits",  price: 100, rating: 4.1, image: fruits2 },
-       { id: 3, name: 'Banana', category:"Fruits", price: 80, rating: 4.3, image: fruits3 },
-       { id: 4, name: 'Watermelon', category:"Fruits", price: 60, rating: 4.6, image: fruits4 },
-       { id: 5, name: 'Blue Berry', category:"Fruits", price: 90, rating: 4.7, image: fruits5 },
-       { id: 6, name: 'Orange', category:"Fruits", price: 100, rating: 4.5, image: fruits6 },
-       { id: 7, name: 'Cherry', category:"Fruits", price: 80, rating: 4.3, image: fruits7 },
-       { id: 8, name: 'Apricot', category:"Fruits", price: 80, rating: 4.4, image: fruits8 },
+  { id: 1, name: 'Strawberry', category: "Fruits", price: 85, rating: 4.6, image: fruits1 },
+  { id: 2, name: 'Apple', category: "Fruits", price: 100, rating: 4.6, image: fruits2 },
+  { id: 3, name: 'Banana', category: "Fruits", price: 75, rating: 4.0, image: fruits3 },
+  { id: 4, name: 'Watermelon', category: "Fruits", price: 65, rating: 4.7, image: fruits4 },
+  { id: 5, name: 'Blue Berry', category: "Fruits", price: 95, rating: 4.8, image: fruits5 },
+  { id: 6, name: 'Orange', category: "Fruits", price: 100, rating: 4.6, image: fruits6 },
+  { id: 7, name: 'Cherry', category: "Fruits", price: 85, rating: 4.4, image: fruits7 },
+  { id: 8, name: 'Apricot', category: "Fruits", price: 90, rating: 4.5, image: fruits8 },
 ];
+
 
 const Fruits = () => {
   const [priceFilter, setPriceFilter] = useState(100);

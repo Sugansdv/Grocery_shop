@@ -53,7 +53,9 @@ const Footer = () => {
 
             <div className="footer-main">
                 <div className="footer-section about ms-lg-5 ps-lg-5 text-center">
-                    <img className='brand-name ' src={logo} alt="Brand" />
+                    <div className='w-50 m-auto mb-2'>
+                        <img className='brand-name ' src={logo} alt="Brand" />
+                    </div>
                     <p className='text-center'>
                         Fresh groceries, particularly fruits, vegetables, whole grains, and lean proteins,
                         play a crucial role in nourishing our bodies and promoting overall well-being.

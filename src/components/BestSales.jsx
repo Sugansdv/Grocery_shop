@@ -19,8 +19,8 @@ const productsData = [
   { id: 1, name: 'Strawberies',Category:'Best sales', price: 80, rating: 5, image: BS1 },
   { id: 2, name: 'Apples',Category:'Best sales', price: 50, rating: 4, image: BS2 },
   { id: 3, name: 'Bananas',Category:'Best sales', price: 30, rating: 4, image: BS3 },
-  { id: 4, name: 'Watermelon',Category:'Best sales', price: 60, rating: 5, image: BS4 },
-  { id: 5, name: 'Blue Berries',Category:'Best sales', price: 40, rating: 3, image: BS5 },
+  { id: 4, name: 'Watermelon',Category:'Best sales', price: 60, rating: 4, image: BS4 },
+  { id: 5, name: 'Blue Berries',Category:'Best sales', price: 40, rating: 4, image: BS5 },
   { id: 6, name: 'Orange',Category:'Best sales', price: 100, rating: 4, image: BS6 },
   { id: 7, name: 'Cherry',Category:'Best sales', price: 70, rating: 4, image: BS7 },
   { id: 8, name: 'Pista',Category:'Best sales', price: 90, rating: 5, image: BS8 },
@@ -70,7 +70,7 @@ const BestSales = () => {
                   className="fs-1"
                   style={{ textDecoration: "underline", color: "#28a745" }}
                 >
-                  Bakery
+                  Best Sales
                 </h3>
               </div>
           <div className="row">

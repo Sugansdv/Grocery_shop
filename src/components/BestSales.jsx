@@ -6,24 +6,24 @@ import { CartContext } from './CartContext';
 import '../assets/css/Category.css';
 import { Link } from 'react-router-dom';
 
-import BS1 from '../assets/fruit des 3.png';
-import BS2 from '../assets/fruits cate 2.png';
-import BS3 from '../assets/fruits cate 3.png';
-import BS4 from '../assets/fruits cate 4.png';
-import BS5 from '../assets/fruits cate 5.png';
-import BS6 from '../assets/fruits cate 6.png';
-import BS7 from '../assets/fruits cate 7.png';
-import BS8 from '../assets/fruits cate 8.png';
+import BestSales1 from '../assets/fruit des 3.png';
+import BestSales2 from '../assets/fruits cate 2.png';
+import BestSales3 from '../assets/fruits cate 3.png';
+import BestSales4 from '../assets/fruits cate 4.png';
+import BestSales5 from '../assets/fruits cate 5.png';
+import BestSales6 from '../assets/fruits cate 6.png';
+import BestSales7 from '../assets/fruits cate 7.png';
+import BestSales8 from '../assets/fruits cate 8.png';
 
 const productsData = [
-  { id: 1, name: 'Strawberies',Category:'Best sales', price: 80, rating: 5, image: BS1 },
-  { id: 2, name: 'Apples',Category:'Best sales', price: 50, rating: 4, image: BS2 },
-  { id: 3, name: 'Bananas',Category:'Best sales', price: 30, rating: 4, image: BS3 },
-  { id: 4, name: 'Watermelon',Category:'Best sales', price: 60, rating: 4, image: BS4 },
-  { id: 5, name: 'Blue Berries',Category:'Best sales', price: 40, rating: 4, image: BS5 },
-  { id: 6, name: 'Orange',Category:'Best sales', price: 100, rating: 4, image: BS6 },
-  { id: 7, name: 'Cherry',Category:'Best sales', price: 70, rating: 4, image: BS7 },
-  { id: 8, name: 'Pista',Category:'Best sales', price: 90, rating: 5, image: BS8 },
+  { id: 1, name: 'Strawberies',Category:'Best sales', price: 80, rating: 5, image: BestSales1 },
+  { id: 2, name: 'Apples',Category:'Best sales', price: 50, rating: 4, image: BestSales2 },
+  { id: 3, name: 'Bananas',Category:'Best sales', price: 30, rating: 4, image: BestSales3 },
+  { id: 4, name: 'Watermelon',Category:'Best sales', price: 60, rating: 4, image: BestSales4 },
+  { id: 5, name: 'Blue Berries',Category:'Best sales', price: 40, rating: 4, image: BestSales5 },
+  { id: 6, name: 'Orange',Category:'Best sales', price: 100, rating: 4, image: BestSales6 },
+  { id: 7, name: 'Cherry',Category:'Best sales', price: 70, rating: 4, image: BestSales7 },
+  { id: 8, name: 'Pista',Category:'Best sales', price: 90, rating: 5, image: BestSales8 },
 ];
 
 const BestSales = () => {
